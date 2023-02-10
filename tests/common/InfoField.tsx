@@ -1,6 +1,6 @@
 import React from 'react';
 import { Field } from '../../src';
-import type { FieldProps } from '../../src/Field';
+import type { FieldProps } from '../../src/components/Field';
 
 interface InfoFieldProps extends FieldProps {
   children?: React.ReactElement;

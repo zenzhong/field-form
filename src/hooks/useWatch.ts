@@ -1,10 +1,10 @@
-import type { FormInstance } from '.';
-import { FieldContext } from '.';
+import type { FormInstance } from '..';
+import { FieldContext } from '..';
 import warning from 'rc-util/lib/warning';
-import { HOOK_MARK } from './FieldContext';
-import type { InternalFormInstance, InternalNamePath, NamePath, Store } from './interface';
+import { HOOK_MARK } from '../context/FieldContext';
+import type { InternalFormInstance, InternalNamePath, NamePath, Store } from '../interface';
 import { useState, useContext, useEffect, useRef, useMemo } from 'react';
-import { getNamePath, getValue } from './utils/valueUtil';
+import { getNamePath, getValue } from '../utils/valueUtil';
 
 type ReturnPromise<T> = T extends Promise<infer ValueType> ? ValueType : never;
 type GetGeneric<TForm extends FormInstance> = ReturnPromise<ReturnType<TForm['validateFields']>>;

@@ -6,12 +6,12 @@ import type {
   ValidateMessages,
   Callbacks,
   InternalFormInstance,
-} from './interface';
-import useForm from './useForm';
-import FieldContext, { HOOK_MARK } from './FieldContext';
-import type { FormContextProps } from './FormContext';
-import FormContext from './FormContext';
-import { isSimilar } from './utils/valueUtil';
+} from '../../interface';
+import useForm from '../../hooks/useForm';
+import FieldContext, { HOOK_MARK } from '../../context/FieldContext';
+import type { FormContextProps } from '../../context/FormContext';
+import FormContext from '../../context/FormContext';
+import { isSimilar } from '../../utils/valueUtil';
 
 type BaseFormProps = Omit<React.FormHTMLAttributes<HTMLFormElement>, 'onSubmit' | 'children'>;
 

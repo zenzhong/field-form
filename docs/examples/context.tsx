@@ -4,7 +4,7 @@ import React from 'react';
 import Form, { FormProvider } from 'rc-field-form';
 import Input from './components/Input';
 import LabelField from './components/LabelField';
-import { ValidateMessages } from '@/interface';
+import type { ValidateMessages } from '@/interface';
 
 const myMessages: ValidateMessages = {
   required: '${name} 是必需品',

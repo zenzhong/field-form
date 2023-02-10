@@ -26,7 +26,7 @@ const Demo = () => {
         //   users: ['little'],
         // }}
       >
-        <Form.Field shouldUpdate>{() => JSON.stringify(form.getFieldsValue(), null, 2)}</Form.Field>
+        <Form.Field>{() => JSON.stringify(form.getFieldsValue(), null, 2)}</Form.Field>
 
         <List
           name="users"
@@ -48,7 +48,7 @@ const Demo = () => {
               <div>
                 <h4>List of `users`</h4>
                 {fields.map((field, index) => (
-                  <LabelField {...field} rules={[{ required: true }]}>
+                  <LabelField key={index} {...field} rules={[{ required: true }]}>
                     {control => (
                       <div style={{ position: 'relative' }}>
                         <Input {...control} />

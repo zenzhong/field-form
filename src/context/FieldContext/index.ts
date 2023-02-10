@@ -1,6 +1,6 @@
 import warning from 'rc-util/lib/warning';
 import * as React from 'react';
-import type { InternalFormInstance } from './interface';
+import type { InternalFormInstance } from '../../interface';
 
 export const HOOK_MARK = 'RC_FORM_INTERNAL_HOOKS';
 

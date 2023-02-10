@@ -1,6 +1,6 @@
 import warning from 'rc-util/lib/warning';
 import * as React from 'react';
-import { HOOK_MARK } from './FieldContext';
+import { HOOK_MARK } from '../context/FieldContext';
 import type {
   Callbacks,
   FieldData,
@@ -23,11 +23,11 @@ import type {
   ValidateOptions,
   ValuedNotifyInfo,
   WatchCallBack,
-} from './interface';
-import { allPromiseFinish } from './utils/asyncUtil';
-import cloneDeep from './utils/cloneDeep';
-import { defaultValidateMessages } from './utils/messages';
-import NameMap from './utils/NameMap';
+} from '../interface';
+import { allPromiseFinish } from '../utils/asyncUtil';
+import cloneDeep from '../utils/cloneDeep';
+import { defaultValidateMessages } from '../utils/messages';
+import NameMap from '../utils/NameMap';
 import {
   cloneByNamePathList,
   containsNamePath,
@@ -36,7 +36,7 @@ import {
   matchNamePath,
   setValue,
   setValues,
-} from './utils/valueUtil';
+} from '../utils/valueUtil';
 
 type InvalidateFieldEntity = { INVALIDATE_NAME_PATH: InternalNamePath };
 

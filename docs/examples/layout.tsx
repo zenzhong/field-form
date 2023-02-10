@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/label-has-associated-control, react/prop-types */
+/* eslint-disable react/prop-types */
 
 import React from 'react';
 import Form from 'rc-field-form';
@@ -7,6 +7,7 @@ import LabelField from './components/LabelField';
 
 const list = new Array(1111).fill(() => undefined);
 
+// TODO: what does this example explain for?
 export default class Demo extends React.Component {
   state = {};
 

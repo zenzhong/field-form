@@ -16,16 +16,16 @@ import type {
   StoreValue,
   EventArgs,
   RuleError,
-} from './interface';
-import FieldContext, { HOOK_MARK } from './FieldContext';
-import { toArray } from './utils/typeUtil';
-import { validateRules } from './utils/validateUtil';
+} from '../../interface';
+import FieldContext, { HOOK_MARK } from '../../context/FieldContext';
+import { toArray } from '../../utils/typeUtil';
+import { validateRules } from '../../utils/validateUtil';
 import {
   containsNamePath,
   defaultGetValueFromEvent,
   getNamePath,
   getValue,
-} from './utils/valueUtil';
+} from '../../utils/valueUtil';
 
 const EMPTY_ERRORS: any[] = [];
 
