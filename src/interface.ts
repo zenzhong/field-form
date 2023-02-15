@@ -1,5 +1,5 @@
 import type { ReactElement } from 'react';
-import type { ReducerAction } from './hooks/useForm';
+import type { ReducerAction } from './context/FormStore';
 
 export type InternalNamePath = (string | number)[];
 export type NamePath = string | number | InternalNamePath;
